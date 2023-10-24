@@ -1,0 +1,65 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>500</y><w>210</w><h>100</h></coordinates><panel_attributes>Amigo
+--
+- nombre: String
+- domicilio: String
+--
++Amigo(String, String)
++mismoNombre(String): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>450</y><w>340</w><h>190</h></coordinates><panel_attributes>PropuestaReunion
+--
+
+--
++ PropuestaReunion(DiaSemana, MomentoDia)
++ anotarAmigo(Amigo): ResultadoOperacion
++ borrarAmigo(Amigo): ResultadoOperacion
+- estaAnotado(Amigo): boolean
++ mismaPropuesta(DiaSemana, MomentoDia): boolean
++ listar(): void
++ sinAnotados():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>530</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- anotados
+</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>190</y><w>190</w><h>100</h></coordinates><panel_attributes>ResultadoOperacion
+--
+_+ OK_
+_+ AMIGO_YA_EXISTENTE_
+_+ AMIGO_NO_EXISTENTE_
+_+ PROPUESTA_NO_EXISTENTE_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>280</y><w>170</w><h>220</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>150;10;10;200</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>110</y><w>610</w><h>250</h></coordinates><panel_attributes>Reunion
+--
+- motivo: String
+--
++ Reunion(String)
++ anotarAmigo(String, String):ResultadoOperacion
+- bajarDePropuesta(Amigo, DiaSemana, MomentoDia): ResultadoOperacion
++ bajarDePropuesta(String, DiaSemana, MomentoDia): ResultadoOperacion
+- buscarAmigo(String): Amigo
+- buscarPropuesta(DiaSemana, MomentoDia): PropuestaReunion
++ cambiarDePropuesta(String, DiaSemana, MomentoDia, DiaSemana, MomentoDia): ResultadoOperacion
++ crearPropuesta(String, DiaSemana, MomentoDia): ResultadoOperacion
++ listar(): void
+- listarAmigos(): void
+- listarPropuestas(): void
+- unirAPropuesta(DiaSemana, MomentoDia, Amigo): ResultadoOperacion
++ unirAPropuesta(DiaSemana, MomentoDia, String): ResultadoOperacion
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>350</y><w>80</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- amigos
+</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>350</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- propuestasExistentes
+</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>240</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>410</y><w>100</w><h>70</h></coordinates><panel_attributes>MomentoDia
+--
+_+ MEDIODIA_
+_+ NOCHE_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>500</y><w>100</w><h>140</h></coordinates><panel_attributes>DiaSemana
+--
+_+ DOMINGO_
+_+ LUNES_
+_+ MARTES_
+_+ MIERCOLES_
+_+ JUEVES_
+_+ VIERNES_
+_+ SABADO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>440</y><w>190</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- momentoDia
+</panel_attributes><additional_attributes>170;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>550</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- diaSemana
+</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>260</y><w>220</w><h>200</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>200;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>290</y><w>220</w><h>250</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>200;230;10;10</additional_attributes></element></diagram>

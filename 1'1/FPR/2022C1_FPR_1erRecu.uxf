@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>10</y><w>390</w><h>160</h></coordinates><panel_attributes>VoyDeCompras
+--
+
+--
++ VoyDeCompras()
++ cargarCosasAComprar(String,double):void
++ salirDeCompras():void
+- realizarCompras():ArrayList&lt;Articulo&gt;
+- mostrarArticulos(ArrayList&lt;Articulo&gt;, String):void
+- buscarArticulo(String): Articulo
+- realizarCompraEnNegocio(Negocio, ArrayList&lt;Articulo&gt;): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>10</y><w>200</w><h>160</h></coordinates><panel_attributes>Articulo
+--
+- nombre: String
+- cantidad: double
+
+--
++ Articulo(String, double)
++ actualizarCantidad(double):void
++ vender(double):boolean
++ toString(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>160</y><w>270</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- negocios</panel_attributes><additional_attributes>250;140;10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>230</y><w>220</w><h>120</h></coordinates><panel_attributes>Negocio
+--
+- nombre: String
+
+--
++ venderArticulo(Articulo):boolean
+- buscarArticulo(String):Articulo
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>160</y><w>260</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- artículosEnStock</panel_attributes><additional_attributes>140;10;140;150;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>110</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- artículosAComprar</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element></diagram>
