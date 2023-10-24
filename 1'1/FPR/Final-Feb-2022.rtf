@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Enunciado\
+Google nos encarga desarrollar un sistema para la instalaci\'f3n y actualizaci\'f3n de las aplicaciones de los tel\'e9fonos Android.\
+Este sistema puede recibir por par\'e1metro ninguna, una o m\'e1s aplicaciones para actualizar y/o instalar seg\'fan corresponda.\
+De cada aplicaci\'f3n recibida se conoce su nombre (String), su n\'famero de versi\'f3n (entero), el espacio que ocupa una vez instalada (double) y la versi\'f3n m\'ednima requerida del sistema operativo del tel\'e9fono (entero).\
+\
+Adem\'e1s, cada aplicaci\'f3n tiene una colecci\'f3n de configuraciones predeterminadas las cuales pueden ir cambiando en la medida que el usuario la utilice. Se entiende por configuraci\'f3n por ejemplo una foto de perfil (avatar), nombre de usuario dentro de la aplicaci\'f3n, etc.\
+Si la aplicaci\'f3n no existe en el tel\'e9fono, se instalar\'e1.\
+Si la aplicaci\'f3n ya existe en el tel\'e9fono se debe realizar una actualizaci\'f3n. Para esto se debe eliminar la versi\'f3n existente y luego instalar la nueva. Tomar en cuenta que se deben mantener las configuraciones asociadas a la aplicaci\'f3n. \
+Antes de instalar o actualizar una aplicaci\'f3n recibida, se debe chequear que el tel\'e9fono disponga de espacio suficiente, que la versi\'f3n del sistema operativo sea igual o superior a la requerida y, en caso de ser una actualizaci\'f3n, adem\'e1s se debe chequear que la versi\'f3n de la aplicaci\'f3n recibida sea mayor a la ya instalada. Si todos los requisitos se cumplen, se podr\'e1 llevar a cabo la operaci\'f3n.\
+\
+De la clase Configuracion conocemos el identificador del dato que guarda (String), el dato, m\'e1s el tama\'f1o que ocupa dicho dato. A continuaci\'f3n presentamos el UML de la clase Configuracion.\
+Nota: El dato del tipo Object no es relevante para la resoluci\'f3n del ejercicio. Indica que el atributo puede recibir cualquier tipo de dato.\
+Del tel\'e9fono se conoce el n\'famero de versi\'f3n del sistema operativo y la capacidad de espacio total de f\'e1brica en el que pueden instalar las aplicaciones.\
+Se pide:\
+Confeccionar el diagrama UML que describe el escenario del enunciado incluyendo los atributos de cada clase y los m\'e9todos a desarrollar y aquellos que creas conveniente.\
+\
+Desarrollar el m\'e9todo calcularEspacioOcupado() que no recibe par\'e1metros y devuelve un valor double que indica la cantidad de espacio ocupado por las aplicaciones instaladas.\
+\
+Desarrollar el m\'e9todo gestionarAplicaciones(\'85) que recibe las aplicaciones para instalar o para actualizar y hace su tarea seg\'fan lo descripto m\'e1s arriba devolviendo un resultado posible por cada una de las aplicaciones.\
+\
+INSTALACION_OK: la aplicaci\'f3n se instal\'f3 en forma correcta.\
+ACTUALIZACION_OK: la aplicaci\'f3n se actualiz\'f3 en forma correcta.\
+ESPACIO_INSUFICIENTE: el tel\'e9fono no dispone de espacio suficiente para instalar o actualizar dicha aplicaci\'f3n.\
+VERSION_INCORRECTA: la versi\'f3n del sistema operativo es menor a la requerida por la aplicaci\'f3n.\
+VERSION_NO_SUPERIOR: la versi\'f3n de la aplicaci\'f3n recibida no es superior a la ya existente en el tel\'e9fono.}

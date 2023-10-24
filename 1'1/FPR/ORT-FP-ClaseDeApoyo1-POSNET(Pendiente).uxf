@@ -1,0 +1,44 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>510</x><y>270</y><w>230</w><h>110</h></coordinates><panel_attributes>TarjetaDeCredito
+--
+- nombreBanco: String
+- nroTarjeta: String
+- saldo: double
+--
++ tieneSaldoSuficiente(double): boolean
++ nombreCompletoDeTitular(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>260</y><w>160</w><h>130</h></coordinates><panel_attributes>Persona
+--
+- DNI: String
+- nombre: String
+- apellido: String
+- telefono: String
+- mail: String
+--
++ nombreCompleto(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>100</y><w>120</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+EntidadFinanciera
+--
+_+ VISA_
+_+ MASTERCARD_
+_+ MAESTRO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>450</y><w>300</w><h>120</h></coordinates><panel_attributes>Posnet
+--
+_- CUOTA_MIN: int = 1_
+_- CUOTA_MAX: int = 6_
+_- INCREMENTO: double = 0.03_
+--
++ efectuarPago(TarjetaDeCredito, double, int): Ticket
+- calcularMontoFinal(double, int): double </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>430</y><w>180</w><h>100</h></coordinates><panel_attributes>Ticket
+--
+- nombreApellido: String
+- monto: double
+- montoXCuota: double
+--
++ Ticket(String, double, double)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>340</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- titular</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>180</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- entidad</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLNote</id><coordinates><x>170</x><y>70</y><w>220</w><h>120</h></coordinates><panel_attributes>public class TarjetaDeCredito {
+     private String nombreBanco;
+     private String nroTarjeta;
+     private double saldo;
+     private Persona titular;
+     private EntidadFinanciera entidad;
+}</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>460</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>370</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element></diagram>

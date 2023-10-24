@@ -1,0 +1,44 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>790</x><y>160</y><w>210</w><h>190</h></coordinates><panel_attributes>Vehiculo
+--
+-patente: String
+--
++obtenerMesesAdeudados(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>160</y><w>350</w><h>190</h></coordinates><panel_attributes>Garaje
+--
+-codigo: String 
+--
++estacionarVehiculo(String): Resultado
++obtenerInformeEstacionadosConDeuda(): ArrayList&lt;Informe&gt;
+-buscarVehiculo(ArrayList&lt;&gt;): Vehiculo
+-estacionado(String): booleano
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>410</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Resultado
+-
++VEHICULO_NO_HABILITADO
++VEHICULO_YA_ESTACIONADO
++NO_ESTACIONA_ADEUDA
++INGRESO_OK</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>190</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-estacionados
+m1=*</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>260</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-retirados 
+m1=*
+</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>340</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>400</y><w>170</w><h>100</h></coordinates><panel_attributes>Tablero
+--
+
+--
++devolverLlave(String): Llave</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>400</y><w>150</w><h>90</h></coordinates><panel_attributes>Llave
+--
+-patenteVehiculo: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>460</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>380</y><w>160</w><h>130</h></coordinates><panel_attributes>Persona
+--
+-dni: String
+-nombreCompleto: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>990</x><y>230</y><w>110</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-autorizados</panel_attributes><additional_attributes>30;150;30;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>290</y><w>100</w><h>210</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;190;80;190;80;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>160</y><w>210</w><h>190</h></coordinates><panel_attributes>Empresa
+--
++mostrarVehiculoSinLlave(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>220</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-garajes</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>410</y><w>130</w><h>90</h></coordinates><panel_attributes>Informe
+--
+-Patente: String
+-meses: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>340</y><w>270</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>250;70;250;40;10;40;10;10</additional_attributes></element></diagram>

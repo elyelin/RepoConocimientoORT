@@ -1,0 +1,22 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>10</y><w>200</w><h>110</h></coordinates><panel_attributes>Academia
+--
++ agregarCurso(String, Nivel): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>220</y><w>140</w><h>140</h></coordinates><panel_attributes>Curso
+--
+- idCurso: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>450</y><w>140</w><h>90</h></coordinates><panel_attributes>Alumno
+-
+- nombre: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>110</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-cursos</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>350</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-alumnos</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>20</x><y>70</y><w>80</w><h>470</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;450;10;450;10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>240</y><w>60</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Nivel
+--
+_+ ALTO_
+_+ MEDIO_
+_+ BAJO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>280</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- nivel</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>70</y><w>100</w><h>190</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;170;80;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>240</x><y>380</y><w>140</w><h>40</h></coordinates><panel_attributes>Falta agregar métodos
+hechos en el NS+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>10</y><w>200</w><h>50</h></coordinates><panel_attributes>Validador
+-
+--
+_+ esCadenaValida(String): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>40</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element></diagram>
