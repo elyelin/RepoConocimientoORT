@@ -1,0 +1,58 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>310</x><y>120</y><w>290</w><h>190</h></coordinates><panel_attributes>/Componente/
+--
+-texto: String
+-ejeX: int
+-ejeY: int
+-color: String
+-ancho: int
+-altura: int
+-habilitado: boolean
+--
++Componente(string,int,int,string,int,int,boolean)
++Componente(string)
+/+dibujar(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>360</y><w>210</w><h>140</h></coordinates><panel_attributes>Ventana
+--
+
+--
++agregar(Componente): boolean
++dibujar(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>360</y><w>240</w><h>140</h></coordinates><panel_attributes>Boton
+--
+
+--
++Boton(string,in,int,string,int,int,boolean)
++Boton(String)
++dibujar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>200</y><w>120</w><h>120</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+MINIMIZADA
+ MAXIMIZADA
+ CERRADA
+ ABIERTA</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>360</y><w>190</w><h>140</h></coordinates><panel_attributes>CampoTexto
+--
+-multitexto: String
+-cursor: boolean
+--
++dibujar(): void
++activarCursor(boolean): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>360</y><w>260</w><h>140</h></coordinates><panel_attributes>Etiqueta
+--
+-fuente: String
+--
++Etiqueta(string,in,int,string,int,int,boolean)
++Etiqueta(String)
++dibujar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>300</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>320</y><w>740</w><h>60</h></coordinates><panel_attributes>lt=-
+
+</panel_attributes><additional_attributes>10;40;10;20;290;20;290;40;290;20;460;20;460;40;460;20;720;20;720;40</additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>310</y><w>40</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>530</y><w>330</w><h>110</h></coordinates><panel_attributes>VentanaError
+--
+
+--
++VentanaError(string,in,int,string,int,int,boolean,Estado)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>490</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>220</y><w>290</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-componentes</panel_attributes><additional_attributes>10;20;270;20;270;140</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>490</y><w>120</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-etiqueta</panel_attributes><additional_attributes>10;10;10;70;100;70</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>490</y><w>570</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-boton</panel_attributes><additional_attributes>10;10;10;80;550;80</additional_attributes></element></diagram>

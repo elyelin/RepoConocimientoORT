@@ -1,0 +1,36 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>75</y><w>320</w><h>190</h></coordinates><panel_attributes>Hotel
+--
+-nombre: String
+-direccion: String
+--
++obtenerHabitacionesDisponibles(): ArrayList&lt;Habitaicon&gt;
++realizarCheckout(int):int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>75</y><w>210</w><h>190</h></coordinates><panel_attributes>Habitacion
+--
+-numero: int
+-precioXDia: int
+-ocupada: boolean
+-nombreCLiente: String
+-cantDiasEstadia: int
+--
++Habitacion(int, int)
+-calcularTotal(): int
+-totalAdicionales():int
+-getOcupada():Boolean
+-getNumero(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>125</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-habitaciones</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>145</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0...*
+-adicionales</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>75</y><w>210</w><h>190</h></coordinates><panel_attributes>Adicional
+--
+-precio: int
+-fechaPrestacion: int
+--
+-getPrecio():int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>315</y><w>140</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Tipo
+--
+_+DESAYUNO_
+_+ROOM_SERVICE_
+_+TRASLADO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>250</y><w>50</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tipo</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element></diagram>
